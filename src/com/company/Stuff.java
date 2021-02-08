@@ -13,7 +13,7 @@ public class Stuff {
 
     @Override
     public String toString() {
-        return "com.company.Main.Stuff{" +
+        return "Stuff{" +
                 "name='" + name + '\'' +
                 ", weight=" + weight +
                 '}';

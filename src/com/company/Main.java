@@ -11,7 +11,16 @@ public class Main {
         Weapon luk = new Weapon("Łuk", 60, 46, 5);
         Weapon topor = new Weapon("Topór", 130, 78, 4);
 
-        
+        Avatar legolas = new Avatar("Legolas", 100, luk);
+        Avatar gandalf = new Avatar("Gandalf", 150, plecak);
+
+
+        legolas.isAlive();
+        legolas.getHand();
+        gandalf.getHand();
+        legolas.attack();
+        gandalf.attack();
+
 
 
     }

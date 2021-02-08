@@ -16,20 +16,29 @@ public class Avatar {
         this.hand = hand;
     }
 
-    public boolean isAlive (int health){
+    public boolean isAlive (){
 
-        if (health > 0)
+        if (health > 0) {
+            System.out.println("Żywy");
             return true;
-        else
+        }
+        else {
+            System.out.println("Dead");
             return false;
+        }
     }
 
     public int attack(){
 
-        if (getHand() == weapon1)
+        if (getHand().equals(weapon1)){
+            System.out.println("atak");
             return weapon1.baseAttack;
-        else return 0;
 
+        }
+        else {
+            System.out.println("nic");
+            return 0;
+        }
     }
 
     public String getCharacterName() {
@@ -49,6 +58,8 @@ public class Avatar {
     }
 
     public Stuff getHand() {
+
+        System.out.println(hand);
         return hand;
     }
 
