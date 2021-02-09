@@ -32,4 +32,10 @@ public class Monster {
         }
     }
 
+    public void hurt (double d){
+
+        health -= d;
+
+    }
+
 }

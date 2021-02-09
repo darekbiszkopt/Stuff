@@ -41,6 +41,13 @@ public class Avatar implements IStuff{
         }
     }
 
+    public void hurt (double d){
+
+        health -= d;
+
+    }
+
+
     public String getCharacterName() {
         return characterName;
     }
