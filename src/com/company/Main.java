@@ -18,8 +18,9 @@ public class Main {
         legolas.isAlive();
         legolas.getHand();
         gandalf.getHand();
-        legolas.attack();
         gandalf.attack();
+       // legolas.attack();
+
 
 
 

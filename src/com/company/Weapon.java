@@ -1,6 +1,6 @@
 package com.company;
 
-public class Weapon extends Stuff{
+public class Weapon extends Stuff implements IStuff{
 
     int baseAttack;
     int bonus;
@@ -9,7 +9,12 @@ public class Weapon extends Stuff{
         super(name, weight);
         this.baseAttack = baseAttack;
         this.bonus = bonus;
+
     }
 
+    @Override
+    public int use() {
+        return 1;
+    }
 
 }

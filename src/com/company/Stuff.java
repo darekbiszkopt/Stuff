@@ -1,6 +1,6 @@
 package com.company;
 
-public class Stuff {
+public class Stuff implements IStuff {
 
     private String name;
     private int weight;
@@ -17,5 +17,11 @@ public class Stuff {
                 "name='" + name + '\'' +
                 ", weight=" + weight +
                 '}';
+    }
+
+
+    @Override
+    public int use() {
+        return 0;
     }
 }

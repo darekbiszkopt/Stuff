@@ -1,6 +1,6 @@
 package com.company;
 
-public class Avatar {
+public class Avatar implements IStuff{
 
 
 
@@ -30,7 +30,7 @@ public class Avatar {
 
     public int attack(){
 
-        if (getHand().equals(weapon1)){
+        if (getHand().use() == 1){
             System.out.println("atak");
             return weapon1.baseAttack;
 
@@ -75,5 +75,10 @@ public class Avatar {
                 ", hand=" + hand +
                 ", weapon1=" + weapon1 +
                 '}';
+    }
+
+    @Override
+    public int use() {
+        return 0;
     }
 }
