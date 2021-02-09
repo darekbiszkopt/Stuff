@@ -24,4 +24,17 @@ public class Stuff implements IStuff {
     public int use() {
         return 0;
     }
+
+    @Override
+    public int getBaseAttack() {
+        return 0;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getWeight() {
+        return weight;
+    }
 }

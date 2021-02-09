@@ -17,4 +17,29 @@ public class Weapon extends Stuff implements IStuff{
         return 1;
     }
 
+
+    public int getBaseAttack() {
+        return baseAttack;
+    }
+
+    public void setBaseAttack(int baseAttack) {
+        this.baseAttack = baseAttack;
+    }
+
+    public int getBonus() {
+        return bonus;
+    }
+
+    public void setBonus(int bonus) {
+        this.bonus = bonus;
+    }
+
+
+    @Override
+    public String toString() {
+        return "Weapon{name= "  + super.getName() + " weight= "+super.getWeight() +
+                " baseAttack=" + baseAttack +
+                ", bonus=" + bonus +
+                '}';
+    }
 }

@@ -38,4 +38,28 @@ public class Monster {
 
     }
 
+
+    public int getHealth() {
+        return health;
+    }
+
+    public void setHealth(int health) {
+        this.health = health;
+    }
+
+    public int getAttackPower() {
+        return attackPower;
+    }
+
+    public void setAttackPower(int attackPower) {
+        this.attackPower = attackPower;
+    }
+
+    public int getAttackChance() {
+        return attackChance;
+    }
+
+    public void setAttackChance(int attackChance) {
+        this.attackChance = attackChance;
+    }
 }

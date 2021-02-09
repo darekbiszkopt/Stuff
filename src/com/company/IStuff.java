@@ -4,4 +4,7 @@ public interface IStuff {
 
     int use();
 
+    int getBaseAttack();
+
+
 }

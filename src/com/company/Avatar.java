@@ -31,12 +31,13 @@ public class Avatar implements IStuff{
     public int attack(){
 
         if (getHand().use() == 1){
-            System.out.println("atak");
-            return weapon1.baseAttack;
+
+            return hand.getBaseAttack();
 
         }
         else {
             System.out.println("nic");
+            //System.out.println(getBaseAttack());
             return 0;
         }
     }
@@ -66,7 +67,6 @@ public class Avatar implements IStuff{
 
     public Stuff getHand() {
 
-        System.out.println(hand);
         return hand;
     }
 
@@ -87,5 +87,10 @@ public class Avatar implements IStuff{
     @Override
     public int use() {
         return 0;
+    }
+
+    @Override
+    public int getBaseAttack() {
+        return getBaseAttack();
     }
 }
