@@ -23,7 +23,7 @@ public class Arena {
             System.out.println("M " +monster.getHealth());
             counter++;
         }
-        while (avatar.getHealth() > 1 & monster.getHealth() > 1);
+        while (avatar.getHealth() >= 1 & monster.getHealth() >= 1);
 
         if (avatar.getHealth() >  monster.getHealth())
             System.out.println("Bohater " + avatar.getCharacterName()+ " pokonuje potwora" );

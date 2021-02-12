@@ -6,5 +6,7 @@ public interface IStuff {
 
     int getBaseAttack();
 
+    int getBonus();
+
 
 }

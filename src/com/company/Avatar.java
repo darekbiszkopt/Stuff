@@ -7,7 +7,6 @@ public class Avatar implements IStuff{
     private String characterName;
     private int health;
     private Stuff hand = null;
-    private Weapon weapon1;
 
     public Avatar(String characterName, int health, Stuff hand) {
 
@@ -80,7 +79,6 @@ public class Avatar implements IStuff{
                 "characterName='" + characterName + '\'' +
                 ", health=" + health +
                 ", hand=" + hand +
-                ", weapon1=" + weapon1 +
                 '}';
     }
 
@@ -93,4 +91,11 @@ public class Avatar implements IStuff{
     public int getBaseAttack() {
         return getBaseAttack();
     }
+
+    @Override
+    public int getBonus() {
+        return getBonus();
+    }
+
+
 }

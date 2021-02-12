@@ -26,11 +26,5 @@ public class Main {
         Arena arena = new Arena(legolas, ork);
         arena.fight();
 
-
-
-
-
     }
-
-
 }
