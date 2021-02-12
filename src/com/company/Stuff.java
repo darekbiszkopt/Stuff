@@ -35,6 +35,11 @@ public class Stuff implements IStuff {
         return 0;
     }
 
+    @Override
+    public int getHealAmount() {
+        return 0;
+    }
+
 
     public String getName() {
         return name;

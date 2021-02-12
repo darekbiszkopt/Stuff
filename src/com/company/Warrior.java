@@ -14,11 +14,26 @@ public class Warrior extends  Avatar{
             return getHand().getBaseAttack() + getHand().getBonus();
 
         }
+        else if (getHand().use() == 2){
+
+            //getHealth() = getHealth() -  getHand().getHealAmount();
+            System.out.println(getHand().getHealAmount());
+        return  getHealth();
+        }
         else {
             System.out.println("nic");
             //System.out.println(getBaseAttack());
             return 0;
         }
     }
+
+    @Override
+    public int getHealAmount() {
+        return getHealAmount();
+    }
+
+
+
+
 
 }

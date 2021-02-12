@@ -34,6 +34,9 @@ public class Avatar implements IStuff{
             return hand.getBaseAttack();
 
         }
+        else if (getHand().use() == 2)
+            return health += hand.getHealAmount();
+
         else {
             System.out.println("nic");
             //System.out.println(getBaseAttack());
@@ -95,6 +98,11 @@ public class Avatar implements IStuff{
     @Override
     public int getBonus() {
         return getBonus();
+    }
+
+    @Override
+    public int getHealAmount() {
+        return 0;
     }
 
 

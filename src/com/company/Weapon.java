@@ -30,6 +30,12 @@ public class Weapon extends Stuff implements IStuff{
         return bonus;
     }
 
+    @Override
+    public int getHealAmount() {
+        return 0;
+    }
+
+
     public void setBonus(int bonus) {
         this.bonus = bonus;
     }

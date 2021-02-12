@@ -8,5 +8,7 @@ public interface IStuff {
 
     int getBonus();
 
+    int getHealAmount();
+
 
 }

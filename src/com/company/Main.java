@@ -10,21 +10,29 @@ public class Main {
         Weapon miecz = new Weapon("Miecz", 100, 67, 6);
         Weapon luk = new Weapon("Łuk", 60, 46, 5);
         Weapon topor = new Weapon("Topór", 130, 78, 4);
+        Poison poison = new Poison("Medic", 4, 30);
 
-        Avatar legolas = new Avatar("Legolas", 1000, luk);
-        Avatar gandalf = new Avatar("Gandalf", 150, plecak);
+
+        Warrior legolas = new Warrior("Legolas", 1000, poison);
+        Avatar gandalf = new Avatar("Gandalf", 150, poison);
         Monster ork = new Monster(1000, 80, 50);
 
 
         legolas.attack();
-        ork.getHealth();
-        legolas.isAlive();
-        legolas.getHand();
-        gandalf.getHand();
         gandalf.attack();
-        System.out.println();
-        Arena arena = new Arena(legolas, ork);
-        arena.fight();
+
+
+        System.out.println(gandalf);
+        System.out.println(legolas);
+
+        //ork.getHealth();
+        //legolas.isAlive();
+        // legolas.getHand();
+        //gandalf.getHand();
+        //gandalf.attack();
+        //System.out.println();
+        // Arena arena = new Arena(legolas, ork);
+        // arena.fight();
 
     }
 }
